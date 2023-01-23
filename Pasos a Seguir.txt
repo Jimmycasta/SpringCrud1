@@ -16,4 +16,5 @@
    en la clase principal se implementa la interface CommandLineRunner
    se implementa la clase Run, ingresando algunos registros, ejemplo: creando un Estudiante
    con su contructor.
-12-Crear en Templates la pagina html, ejemplo estudiantes.
+12-Crear en Templates la pagina html, ejemplo estudiantes y desde el controlador se le pasan
+	los estudiantes.
