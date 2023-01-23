@@ -1,0 +1,19 @@
+1- Crear Proyecto.
+2- Crear Base de datos.
+3- Crear archivo application.properties.
+4-Crear paquetes: Controlador,entidad,servicio,repositorio.
+5-Crear entidad o entidades necesarias
+6-Crear Interface, en este caso InterfaceEstudiantes.
+7-Crear una interface Repositorio, Ejemplo: EstudianteRepositorio 
+  y que herede de la clase JpaRepository, hay que estereotipar o anotar con @Repository.
+  hay que indicar la clase y el tipo de Id.
+8-Se implementa la Interface creada y se implementan todos los metodos.
+  Hay que anotar o estereotipar la clase implementada con @Service.
+  y hay que injectar el Repositorio creado anteriormente con @Autowired
+10-Crear el controlador, ejemplo: EstudianteControlador y hay que anotarla con @Controller.
+   hay que injectar con @Autowired el servicio creado anteriormente, Ejemplo: EstudianteServicio.
+11-Para probar la base de datos se ingresan algunos registros;
+   en la clase principal se implementa la interface CommandLineRunner
+   se implementa la clase Run, ingresando algunos registros, ejemplo: creando un Estudiante
+   con su contructor.
+12-Crear en Templates la pagina html, ejemplo estudiantes.
